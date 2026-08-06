@@ -28,7 +28,7 @@ response = requests.get(
 )
 if response.status_code == 404:
     print("Year not found :(")
-    exit
+    exit()
 response.raise_for_status()
 
 response.encoding = "utf-8"
@@ -50,7 +50,7 @@ playlist_title = f"{year} Billboard 100"
 playlists = [playlist.get("title") for playlist in yt.get_library_playlists()]
 if playlist_title in playlists:
     print("playlist already created...")
-    exit
+    exit()
 else:
     playlist_id = yt.create_playlist(
         title=playlist_title,
