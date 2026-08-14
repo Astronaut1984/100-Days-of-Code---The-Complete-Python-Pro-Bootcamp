@@ -233,3 +233,6 @@ client_secret*.json
 
 # Browser.json file from ytmusicapi
 browser.json
+
+# Chrome Profile
+chrome-profile/
